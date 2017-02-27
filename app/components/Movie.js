@@ -63,7 +63,6 @@ class Movie extends React.Component{
 
 		return(
 			<div>
-			<h1>Movies List</h1>
 			{items}
 			</div>
 		)

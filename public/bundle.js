@@ -13233,6 +13233,9 @@ var Main = function (_React$Component) {
   _createClass(Main, [{
     key: "render",
     value: function render() {
+      // let align = {
+      // 	textAlign : center;
+      // }
       return _react2.default.createElement(
         "div",
         { className: "main-container" },
@@ -13241,8 +13244,12 @@ var Main = function (_React$Component) {
           { className: "navbar navbar-default", role: "navigation" },
           _react2.default.createElement(
             "div",
-            { className: "col-sm-7 col-sm-offset-2", style: { marginTop: 15 } },
-            "Movies Api Application"
+            { className: "col-sm-7 col-sm-offset-2", style: { marginTop: 5 } },
+            _react2.default.createElement(
+              "h1",
+              { style: { textAlign: "center" } },
+              "Movies Api Application"
+            )
           )
         ),
         _react2.default.createElement(
@@ -13371,11 +13378,6 @@ var Movie = function (_React$Component) {
 			return _react2.default.createElement(
 				'div',
 				null,
-				_react2.default.createElement(
-					'h1',
-					null,
-					'Movies List'
-				),
 				items
 			);
 		}
@@ -13654,7 +13656,6 @@ var Movies = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      console.log(this.props);
       return _react2.default.createElement(
         'div',
         { className: 'row' },
